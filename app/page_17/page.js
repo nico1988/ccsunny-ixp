@@ -15,6 +15,7 @@ export default function Page17() {
               setIsFocus(false)
             }}/>
         </div>
+          <div className='right-save'/>
           <div className='right-circle'>
 
           </div>

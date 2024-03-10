@@ -46,12 +46,21 @@ $product-bg-color:#00AC8F;
             }
         }
 
+        .right-save {
+            width: 60px;
+            height: 60px;
+            top: 36px;
+            right: 180px;
+            position: absolute;
+            background: url('/save.svg') no-repeat center center;
+        }
         .right-circle {
             width: 60px;
             height: 60px;
             margin-top: 36px;
             margin-right: 46px;
-            background: url('/save.svg') no-repeat center center;
+            background: rgba(0, 255, 224, 1);
+            border-radius: 50%;
         }
 
         
