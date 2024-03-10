@@ -1,6 +1,52 @@
+$line-color:#00FFE0;
+
 .page_27 {
     color: white;
     background-color: rgba(0, 0, 0, 1);
+    height: 100vh;
+
+    .line-vertical-1 {
+        height: 100vh;
+        width: 1px;
+        left: 147px;
+        top:0;
+        position: absolute;
+        background-color: $line-color;
+        z-index: 10;
+    }
+    .line-vertical-2 {
+        height: 100vh;
+        width: 1px;
+        left: 1278px;
+        top:0;
+        position: absolute;
+        background-color: $line-color;
+        z-index: 10;
+    }
+    .line-horizontal-1{
+        width: 100vw;
+        height: 1px;
+        position: absolute;
+        top: 198px;
+        background-color: $line-color;
+        z-index: 10;
+    }
+    .line-horizontal-2{
+        width: 100vw;
+        height: 1px;
+        position: absolute;
+        top: 571px;
+        background-color: $line-color;
+        z-index: 10;
+    }
+    .line-horizontal-3{
+        width: 100vw;
+        height: 1px;
+        position: absolute;
+        top: 916px;
+        background-color: $line-color;
+        z-index: 10;
+    }
     .logo {
         background: url('/nike-logo.png') no-repeat;
         width: 100px;
@@ -30,20 +76,20 @@
         width: 700px;
         position: absolute;
         top:0;
-        left:620px;
+        left:626px;
         img {
             width: 100%;
         }
     }
     .shoes-detail {
         position: absolute;
-        top:217px;
-        left:186px;
+        top:216px;
+        left:170px;
         width: 248px;
     }
     .right-bg{
         background: rgba(178, 230, 221, 1);
-        width: 86px;
+        width: 80px;
         height: 629px;
         right:0;
         top:0;
@@ -52,11 +98,10 @@
     }
 
     .footer{
-        bottom: 108px;
-        left:50%;
-        transform: translateX(-50%);
+        bottom: 100px;
+        left:144px;
         height: 230px;
-        width: 1130px;
+        width: 1138px;
         position: absolute;
     }
 }

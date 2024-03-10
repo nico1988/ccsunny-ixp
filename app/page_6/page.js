@@ -4,6 +4,8 @@ import './index.scss';
 export default function Page6() {
   return (
     <main className="bg-black page_6">
+       <div className='line-vertical-1'></div>
+       <div className='line-vertical-2'></div>
        <div className='top-bar'>
           <div className='logo'>
           </div>

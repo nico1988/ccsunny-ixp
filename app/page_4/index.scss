@@ -6,6 +6,46 @@ $product-bg-color:#00AC8F;
 .page_4 {
     color: white;
     background-color: rgba(0, 0, 0, 1);
+    height: 100vh;
+
+    .line-vertical-1 {
+        height: 100vh;
+        width: 1px;
+        left: 354px;
+        top:0;
+        position: absolute;
+        background-color: $line-color;
+    }
+    .line-vertical-2 {
+        height: 100vh;
+        width: 1px;
+        left: 688px;
+        top:0;
+        position: absolute;
+        background-color: $line-color;
+    }
+    .line-vertical-3 {
+        height: 100vh;
+        width: 1px;
+        left: 1018px;
+        top:0;
+        position: absolute;
+        background-color: $line-color;
+    }
+    .line-horizontal-2{
+        width: 100vw;
+        height: 1px;
+        position: absolute;
+        top: 392px;
+        background-color: $line-color;
+    }
+    .line-horizontal-3{
+        width: 100vw;
+        height: 1px;
+        position: absolute;
+        top: 660px;
+        background-color: $line-color;
+    }
     .top-bar {
         height: 130px;
         display: flex;
@@ -32,6 +72,7 @@ $product-bg-color:#00AC8F;
             justify-content: center;
             align-items: center;
             position: relative;
+            margin-left: -36px;
             .icon-search{
                 background: url('/search-icon.svg');
                 width: 24px;

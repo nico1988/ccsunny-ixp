@@ -4,6 +4,11 @@ import './index.scss';
 export default function Page4() {
   return (
     <main className="bg-black page_4">
+      <div className='line-vertical-1'></div>
+      <div className='line-vertical-2'></div>
+      <div className='line-vertical-3'></div>
+      <div className='line-horizontal-2'></div>
+      <div className='line-horizontal-3'></div>
        <div className='top-bar'>
           <div className='logo'>
           </div>

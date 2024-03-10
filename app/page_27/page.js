@@ -3,6 +3,11 @@ import './index.scss';
 export default function Page27() {
   return (
     <main className="bg-black page_27">
+      <div className='line-vertical-1'></div>
+      <div className='line-vertical-2'></div>
+      <div className='line-horizontal-1'></div>
+      <div className='line-horizontal-2'></div> 
+      <div className='line-horizontal-3'></div>
       <div  className='logo'>
 
       </div>

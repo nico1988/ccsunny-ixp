@@ -1,11 +1,11 @@
 "use client";
 import './index.scss';
 
-export default function Page17() {
+export default function Page19() {
   return (
-    <main className="bg-white page_17">
-       <div className='line-vertical-1'></div>
-       <div className='line-vertical-2'></div>
+    <main className="bg-black page_19">
+      <div className='line-vertical-1'></div>
+      <div className='line-vertical-2'></div>
        <div className='top-bar'>
           <div className='logo'>
           </div>
@@ -28,8 +28,11 @@ export default function Page17() {
               <div className='nav-img'/>
             </div>
 
-            <img className='shoes-detail' src='/page-17/shoes-detail.png'/>
-            <img className='tools' src='/page-17/dark-mode.png'/>
+            <img className='tool-bar' src='/page-19/tool-bar.png'/>
+            <img className='color-picker' src='/page-19/color-picker.png'/>
+
+            <img className='shoes-detail' src='/page-19/shoes-detail.png'/>
+            <img className='tools' src='/page-19/footer-circle.png' width={'50%'}/>
         </div>
     </main>
   );
