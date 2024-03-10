@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bg-black{
+    background-color: #1E1E1E;
+}
+
+body {
+    height: 100vh;
+    background-color: #1E1E1E;
+}
+
+
