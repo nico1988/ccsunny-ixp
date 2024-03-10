@@ -4,7 +4,7 @@
 
 
 .bg-black{
-    background-color: #1E1E1E;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .is-hide {
@@ -13,7 +13,7 @@
 
 body {
     height: 100vh;
-    background-color: #1E1E1E;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 

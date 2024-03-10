@@ -1,0 +1,62 @@
+.page_27 {
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    .logo {
+        background: url('/nike-logo.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin-left:24px;
+    }
+
+    .title{
+        font-weight: 700;
+        font-size: 24px;
+        top:116px;
+        left:539px;
+        position: absolute;
+        z-index: 1;
+    }
+    .shoes{
+        .text {
+            font-weight: 700;
+            font-size: 24px;
+            position: absolute;
+            top: 64px;
+            left:240px;
+            width: 374px;
+        }
+        // background: url('/page-27/shoes.png') no-repeat;
+        height:  620px; 
+        width: 700px;
+        position: absolute;
+        top:0;
+        left:620px;
+        img {
+            width: 100%;
+        }
+    }
+    .shoes-detail {
+        position: absolute;
+        top:217px;
+        left:186px;
+        width: 248px;
+    }
+    .right-bg{
+        background: rgba(178, 230, 221, 1);
+        width: 86px;
+        height: 629px;
+        right:0;
+        top:0;
+        position: absolute;
+        border-bottom-left-radius: 80px;
+    }
+
+    .footer{
+        bottom: 108px;
+        left:50%;
+        transform: translateX(-50%);
+        height: 230px;
+        width: 1130px;
+        position: absolute;
+    }
+}
