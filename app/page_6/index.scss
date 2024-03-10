@@ -1,0 +1,114 @@
+
+$line-color:#00FFE0;
+$scroll-bg-color:#B2E6DD;
+$bg-color:#1E1E1E;
+$product-bg-color:#00AC8F;
+.page_4 {
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    font-weight: 700;
+    overflow: hidden;
+    .top-bar {
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px $line-color;
+        .logo {
+            width: 100px;
+            height: 111px;
+            margin-left: 50px;
+            background: url('/nike-logo.svg');
+        }
+
+        .right-circle {
+            width: 60px;
+            height: 60px;
+            margin-top: 36px;
+            margin-right: 46px;
+            background: rgba(0, 255, 224, 1);
+            border-radius: 50%;
+        }
+
+        .tab {
+            position: absolute;
+            top:40px;
+            left:304px;
+            width: 756px;
+            height: 60px;
+            display: flex;
+            border:solid 2px rgba(0, 255, 224, 1);
+            justify-content: space-evenly;
+            .tab-item {
+                width: 33.33%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2px;
+                border-radius: 5px;
+               
+                position: relative;
+                &.active{
+                    background: rgba(12, 165, 147, 1);
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 2px;
+                    height: 60%;
+                    top:12px;
+                    right: -8px;
+                    position: absolute;
+                    background:rgba(0, 255, 224, 1) ;
+                }
+                &:last-child::after{
+                    display: none;
+                }
+            }
+
+        }
+
+        
+    }
+
+    .main{
+        height: calc(100vh - 130px);
+        width: calc(100vw - 530px);
+        margin-left: 265px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .left-text{
+            width: 272px;
+            height: 228px;
+            top:362px;
+            left: -35px;
+            border-radius: 20px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 255, 224, 0.3);
+        }
+        .right-text{
+            width: 237px;
+            height: 228px;
+            top:362px;
+            right: 0;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 255, 224, 0.3);
+        }
+        img{
+            width: 639px;
+            height: 388px;
+        }
+    }
+
+    
+
+}
