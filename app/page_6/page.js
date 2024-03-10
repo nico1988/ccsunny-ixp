@@ -1,7 +1,9 @@
 "use client";
 import './index.scss';
+import { useRouter } from 'next/navigation';
 
 export default function Page6() {
+  const router = useRouter();
   return (
     <main className="bg-black page_6">
        <div className='line-vertical-1'></div>
@@ -20,12 +22,16 @@ export default function Page6() {
         </div>
 
         <div className='main'>
-            <div className='left-text'>
+            <div className='left-text' onClick={()=>{
+              router.push('/page_17')
+            }}>
             DESINGER
             </div>
 
             <img src='/page-6-shoe.png'/>
-            <div className='right-text'>
+            <div className='right-text' onClick={()=>{
+              router.push('/page_17')
+            }}>
             Personalized
             </div>
         </div>

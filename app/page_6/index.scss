@@ -95,6 +95,7 @@ $product-bg-color:#00AC8F;
         align-items: center;
         justify-content: center;
         .left-text{
+            cursor: pointer;
             width: 272px;
             height: 228px;
             top:362px;
@@ -107,6 +108,7 @@ $product-bg-color:#00AC8F;
             background: rgba(0, 255, 224, 0.3);
         }
         .right-text{
+            cursor: pointer;
             width: 237px;
             height: 228px;
             top:362px;

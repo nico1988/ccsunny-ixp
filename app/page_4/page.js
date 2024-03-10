@@ -1,13 +1,15 @@
 "use client";
 import './index.scss';
+import { useRouter } from 'next/navigation';
 
 export default function Page4() {
+  const router = useRouter();
   return (
     <main className="bg-black page_4">
       <div className='line-vertical-1'></div>
       <div className='line-vertical-2'></div>
       <div className='line-vertical-3'></div>
-      <div className='line-horizontal-2'></div>
+      <div className='line-horizontal-2'></div> 
       <div className='line-horizontal-3'></div>
        <div className='top-bar'>
           <div className='logo'>
@@ -34,7 +36,9 @@ export default function Page4() {
               <div className='product-item'></div>
               <div className='product-item'></div>
               <div className='product-item'></div>
-              <div className='product-item plus'>
+              <div className='product-item plus' onClick={()=>{
+                router.push('/page_6')
+              }}>
               </div>
             </div>
         </div>
