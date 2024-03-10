@@ -1,16 +1,26 @@
+"use client";
+import { useState } from 'react';
 import './index.scss';
 
 export default function Home() {
+  const [isFocus, setIsFocus] = useState(false);
   return (
     <main className="bg-black home">
       <div className='line-vertical'></div>
+      {
+        isFocus && <div className='line-vertical-2'></div>
+      }
       <div className='top-bar'>
         <div className='brand-word'>
             DNA LAB
         </div>
         <div className='search'>
             <div className='icon-search'></div>
-            <input />
+            <input onFocus={()=>{
+              setIsFocus(true)
+            }} onBlur={()=>{
+              setIsFocus(false)
+            }}/>
         </div>
         <div className='logo'>
 
@@ -30,7 +40,7 @@ export default function Home() {
             </div>
         </div>
         
-        <div className='product-main'>
+        <div className={`product-main ${isFocus && 'is-hide'}`}>
             <div  className='product-list-wrapper'>
               <div className="product-list-scroll-box">
                 <div className='product-list'>
@@ -148,6 +158,53 @@ export default function Home() {
                 Tongue
               </span>
             </div>
+        </div>
+
+        <div className={`search-section ${!isFocus && 'is-hide'}`}>
+          <div className='search-content'>
+            <div className='search-block'>
+                <div className='search-block-title'>
+                    History
+                </div>
+                <div  className='search-label-list'>
+                  <span className="light">Nike Air Force 1 '07</span>
+                  <span>Nike Air Force 1 Wild</span>
+                  <span>Shadow Pastel</span>
+                  <span>White</span>
+                  <span>original</span>
+                  <span>Nike Air Force 1 PLT.AF.ORM</span>
+                  <span>Shadow</span>
+                  <span>‘07 Low</span>
+                  <span>Black and White</span>
+                </div>
+            </div>
+            <div className='search-block'>
+                <div className='search-block-title'>
+                Discover
+                </div>
+                <div  className='search-label-list'>
+                  <span className="light">Cacao Wow</span>
+                  <span>Nike Air Force 1 '07 LX</span>
+                  <span>Women’s Shoes</span>
+                  <span>Billie Eilish</span>
+                  <span>Nike Air Force 1 Low SP x UNDERCOVER</span>
+                </div>
+            </div>
+            <div className='search-block'>
+                <div className='search-block-title'>
+                  Trends
+                </div>
+                <div  className='search-label-list'>
+                  <span className="light">Nike Air Force 1 PLT.AF.ORM</span>
+                  <span>Shadow</span>
+                  <span>‘07 Low</span>
+                  <span>Black and White</span>
+                </div>
+            </div>
+          </div>
+          <div className='search-right'>
+              
+          </div>
         </div>
       </div>
     </main>
