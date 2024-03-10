@@ -7,13 +7,16 @@
     background-color: rgba(0, 0, 0, 1);
 }
 
+.bg-white{
+    background-color: white;
+}
+
 .is-hide {
     display: none !important;
 }
 
 body {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 1);
 }
 
 

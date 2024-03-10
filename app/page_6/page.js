@@ -1,9 +1,9 @@
 "use client";
 import './index.scss';
 
-export default function Page4() {
+export default function Page6() {
   return (
-    <main className="bg-black page_4">
+    <main className="bg-black page_6">
        <div className='top-bar'>
           <div className='logo'>
           </div>
