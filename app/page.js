@@ -5,30 +5,30 @@ import './index.scss';
 export default function Home() {
   const [isFocus, setIsFocus] = useState(false);
   return (
-    <main className="bg-black home">
-      <div className='line-vertical'></div>
+    <main className="bg-black home h-screen">
+      <div className='block absolute top-0 left-[182px] h-screen border-r border-[#00FFE0]'></div>
       {
-        isFocus && <div className='line-vertical-2'></div>
+        isFocus && <div className='block absolute top-0 right-[280px] h-screen border-r border-[#00FFE0]'></div>
       }
-      <div className='top-bar'>
-        <div className='brand-word'>
+      <div className='h-[130px] flex justify-between border-b border-[#00FFE0]'>
+        <div className='w-[182px] flex items-center justify-center text-white font-bold text-2xl'>
             DNA LAB
         </div>
-        <div className='search'>
-            <div className='icon-search'></div>
-            <input onFocus={()=>{
+        <div className='flex justify-center items-center'>
+            <div className='bg-[url("/search-icon.svg")] w-6 h-6 p-1 bg-no-repeat bg-center absolute left-[calc(50%-300px)]'></div>
+            <input className='border border-[#00FFE0] bg-[#1E1E1E] w-[650px] h-7 rounded-md pl-8 text-white' onFocus={()=>{
               setIsFocus(true)
             }} onBlur={()=>{
               setIsFocus(false)
             }}/>
         </div>
-        <div className='logo'>
+        <div className='w-[100px] h-[111px] mr-10 bg-[url("/nike-logo.svg")] bg-no-repeat bg-center'>
 
         </div>
       </div>
 
       <div className='main'>
-        <div className='left-nav'>
+        <div className='left-nav absolute w-[74px] border border-[#00FFE0] rounded-md left-[20px] top-[285px] h-[652px] flex items-center flex-col'>
             <div className='nav-item active'>
                 <div className='icon shoes'></div>
             </div>
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
         </div>
         
-        <div className={`product-main ${isFocus && 'is-hide'}`}>
+        <div className={`product-main "mt-[56px] ml-[182px] w-[calc(100%-182px)] h-[750px] flex justify-end flex-col ${isFocus && 'is-hide'}`}>
             <div  className='product-list-wrapper'>
               <div className="product-list-scroll-box">
                 <div className='product-list'>
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div className={`search-section ${!isFocus && 'is-hide'}`}>
+        <div className={`text-white ml-[182px] w-[calc(100%-182px)] flex h-[750px] search-section ${!isFocus && 'is-hide'} `}>
           <div className='search-content'>
             <div className='search-block'>
                 <div className='search-block-title'>
@@ -202,7 +202,7 @@ export default function Home() {
                 </div>
             </div>
           </div>
-          <div className='search-right'>
+          <div className='absolute h-[calc(100%-130px)] w-[280px] right-0 top-[130px] flex flex-col bg-[url("/right-bg.png")] bg-no-repeat bg-right'>
               
           </div>
         </div>
