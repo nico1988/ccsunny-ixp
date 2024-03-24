@@ -1,8 +1,3 @@
-
-$line-color:#00FFE0;
-$scroll-bg-color:#B2E6DD;
-$bg-color:#1E1E1E;
-$product-bg-color:#00AC8F;
 .page_17 {
     color: white;
     font-size: 24px;
@@ -15,7 +10,7 @@ $product-bg-color:#00AC8F;
         left: 200px;
         top:0;
         position: absolute;
-        background-color: $line-color;
+        background-color: #00FFE0;
     }
     .line-vertical-2 {
         height: 100vh;
@@ -23,13 +18,13 @@ $product-bg-color:#00AC8F;
         left: 1230px;
         top:0;
         position: absolute;
-        background-color: $line-color;
+        background-color: #00FFE0;
     }
     .top-bar {
         height: 130px;
         display: flex;
         justify-content: space-between;
-        border-bottom: solid 1px $line-color;
+        border-bottom: solid 1px #00FFE0;
         .logo {
             width: 100px;
             height: 111px;
@@ -53,7 +48,7 @@ $product-bg-color:#00AC8F;
                 left: 4px;
             }
             input {
-                border:solid 1px $line-color;
+                border:solid 1px #00FFE0;
                 background-color: white;
                 width: 650px;
                 height: 30px;
