@@ -1,11 +1,10 @@
 "use client";
 import { useState } from 'react';
-import './index.scss';
 
 export default function Home() {
   const [isFocus, setIsFocus] = useState(false);
   return (
-    <main className="bg-black home h-screen">
+    <main className="bg-black h-screen">
       <div className='block absolute top-0 left-[182px] h-screen border-r border-[#00FFE0]'></div>
       {
         isFocus && <div className='block absolute top-0 right-[280px] h-screen border-r border-[#00FFE0]'></div>
@@ -27,20 +26,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='main'>
-        <div className='left-nav absolute w-[74px] border border-[#00FFE0] rounded-md left-[20px] top-[285px] h-[652px] flex items-center flex-col'>
+      <div>
+        <div className='absolute w-[74px] border border-[#00FFE0] rounded-md left-[20px] top-[285px] h-[652px] flex items-center flex-col'>
             <div className='nav-item active'>
-                <div className='icon shoes'></div>
+                <div className='bg-[url("/shoes.svg")] bg-no-repeat bg-center w-12 h-12'></div>
             </div>
             <div className='nav-item '>
-                <div className='icon calendar'></div>
+                <div className='icon bg-[url("/calendar.svg")] bg-no-repeat bg-center w-12 h-12'></div>
             </div>
             <div className='nav-item '>
-                <div className='icon star'></div>
+                <div className='icon bg-[url("/star.svg")] bg-no-repeat bg-center w-12 h-12'></div>
             </div>
         </div>
         
-        <div className={`product-main "mt-[56px] ml-[182px] w-[calc(100%-182px)] h-[750px] flex justify-end flex-col ${isFocus && 'is-hide'}`}>
+        <div className={`product-main "mt-[56px] ml-[182px] w-[calc(100%-182px)] h-[750px] flex justify-end flex-col ${isFocus && 'hidden'}`}>
             <div  className='product-list-wrapper'>
               <div className="product-list-scroll-box">
                 <div className='product-list'>
@@ -160,9 +159,10 @@ export default function Home() {
             </div>
         </div>
 
-        <div className={`text-white ml-[182px] w-[calc(100%-182px)] flex h-[750px] search-section ${!isFocus && 'is-hide'} `}>
-          <div className='search-content'>
-            <div className='search-block'>
+        <div className={`text-white ml-[182px] w-[calc(100%-182px)] flex h-[750px] search-section ${!isFocus && 'hidden'} `}>
+          <div className='search-content w-[900px] mx-auto'>
+            <div className='search-block h-[268px] flex flex-col relative'>
+                <div className="absolute top-full left-[-88px] w-[calc(100%+92px)] h-[1px] bg-[#00FFE0]"></div>
                 <div className='search-block-title'>
                     History
                 </div>

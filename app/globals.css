@@ -2,21 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.bg-black{
-    background-color: rgba(0, 0, 0, 1);
-}
-
-.bg-white{
-    background-color: white;
-}
-
-.is-hide {
-    display: none !important;
-}
-
 body {
     height: 100vh;
+}
+
+@layer components {
+    .nav-item {
+        @apply h-[33.33%] w-[64px] flex items-center justify-center m-[4px_0] relative rounded-[3px];
+
+        &.active {
+            @apply bg-[#00AC8F];
+        }
+        &::after {
+            content: '';
+            @apply block bg-[#00AC8F] h-[2px] w-[80%] absolute top-[calc(100%+2px)];
+        }
+        &:last-child::after {
+            @apply hidden;
+        }
+    }
+
+    .search-block {
+        @apply h-[268px] flex flex-col relative;
+        &::after {
+          content: '';
+          @apply absolute top-full left-[-88px] w-[calc(100%+92px)] h-[1px] bg-[#00FFE0]
+        }
+        .search-block-title{
+            @apply font-bold text-2xl p-[24px]
+        }
+        .search-label-list {
+            @apply pl-[64px] pr-[128px];
+        }
+        .search-label-list span {
+            @apply inline-block bg-[rgba(0,172,143,0.3)] rounded-[5px] p-[4px] ml-[4px] mb-[16px] text-[15px] font-normal leading-[18px];
+
+            &.light {
+                @apply text-lg leading-7
+            }
+        }
+    }
+
+
+    .product-list-wrapper {
+        @apply mt-[108px] h-[157px] rounded-[100px_10px_10px_50px] bg-[#B2E6DD] relative before:content-[''] before:block before:w-full before:absolute before:top-full before:left-[-88px] before:h-[1px] before:bg-[#00FFE0];
+
+        .product-list-scroll-box{
+            @apply absolute left-[72px] bottom-[64px] h-[202px] w-[calc(100%-72px)] overflow-y-hidden
+        }
+        .product-list {
+            @apply flex items-end h-full w-max;
+            .product-item {
+                @apply mr-[16px] inline-block;
+            }
+            .product-item img {
+                @apply max-h-[202px];
+            }
+        }
+
+        .product-name {
+            @apply absolute left-[48px] bottom-[24px] text-[24px] font-bold text-black
+        }
+    }
 }
 
 
