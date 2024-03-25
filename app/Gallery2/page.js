@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 
-export default function Page6() {
+export default function Gallery2() {
   const router = useRouter();
   return (
     <div class="text-white bg-black font-bold text-[24px] overflow-hidden">
@@ -30,7 +30,7 @@ export default function Page6() {
       <div class="flex items-center justify-center h-[calc(100vh-130px)] w-[calc(100vw-530px)] ml-[265px]">
         <div
           onClick={() => {
-            router.push("/page_17");
+            router.push("/designer");
           }}
           class="absolute top-[362px] left-[-35px] w-[272px] h-[228px] rounded-[20px] bg-[rgba(0,255,224,0.3)] flex items-center justify-center cursor-pointer"
         >
@@ -38,7 +38,7 @@ export default function Page6() {
         </div>
         <div
           onClick={() => {
-            router.push("/page_17");
+            router.push("/designer");
           }}
           class="absolute top-[362px] right-0 w-[237px] h-[228px] rounded-tl-[20px] rounded-bl-[20px] bg-[rgba(0,255,224,0.3)] flex items-center justify-center cursor-pointer"
         >

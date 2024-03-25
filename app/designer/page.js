@@ -1,5 +1,5 @@
 "use client";
-export default function Page17() {
+export default function designer() {
   return (
     <div class="h-full text-white text-[24px] font-bold overflow-hidden relative">
       <div class="absolute h-screen w-[1px] bg-[#00FFE0] left-[200px] top-0"></div>

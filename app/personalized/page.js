@@ -1,6 +1,6 @@
 "use client";
 
-export default function Page19() {
+export default function personalized() {
   return (
     <div class="bg-black text-white text-[24px] font-bold overflow-hidden h-screen relative">
       <div class="absolute h-screen w-[1px] bg-[#00FFE0] left-[200px] top-0"></div>

@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 
-export default function Page4() {
+export default function Gallery1() {
   const router = useRouter();
   return (
     <div className="text-white bg-black h-screen relative">
@@ -33,7 +33,7 @@ export default function Page4() {
           <div className="bg-[rgba(0,255,224,0.3)] w-[260px] h-[192px] m-[40px]"></div>
           <div className="bg-[rgba(0,255,224,0.3)] w-[260px] h-[192px] m-[40px]"></div>
           <div  onClick={()=>{
-                router.push('/page_6')
+                router.push('/Gallery2')
               }} className="bg-[url('/plus.svg')] bg-[rgba(0,172,143,1)] bg-no-repeat bg-center cursor-pointer flex items-center justify-center w-[260px] h-[192px] m-[40px]"></div>
         </div>
       </div>

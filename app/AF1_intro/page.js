@@ -1,5 +1,5 @@
 
-export default function Page27() {
+export default function AF1_intro() {
   return (
     <div class="text-white bg-black h-screen relative">
       <div class="absolute h-screen w-[1px] bg-[#00FFE0] left-[147px] z-10"></div>
