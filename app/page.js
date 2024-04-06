@@ -1,8 +1,10 @@
 "use client";
 import { useState } from 'react';
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [isFocus, setIsFocus] = useState(false);
+  const router = useRouter();
   return (
     <main className="bg-black h-screen">
       <div className='block absolute top-0 left-[182px] h-screen border-r border-[#00FFE0]'></div>
@@ -21,7 +23,9 @@ export default function Home() {
               setIsFocus(false)
             }}/>
         </div>
-        <div className='w-[100px] h-[111px] mr-10 bg-[url("/nike-logo.svg")] bg-no-repeat bg-center'>
+        <div onClick={()=>{
+          router.push('/Gallery1');
+        }} className='w-[100px] h-[111px] mr-10 bg-[url("/nike-logo.svg")] bg-no-repeat bg-center cursor-pointer'>
 
         </div>
       </div>
@@ -167,7 +171,7 @@ export default function Home() {
                     History
                 </div>
                 <div  className='search-label-list'>
-                  <span className="light">Nike Air Force 1 '07</span>
+                  <span className="light" >Nike Air Force 1 '07</span>
                   <span>Nike Air Force 1 Wild</span>
                   <span>Shadow Pastel</span>
                   <span>White</span>

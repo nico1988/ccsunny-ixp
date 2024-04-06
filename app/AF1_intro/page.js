@@ -1,5 +1,8 @@
+"use client";
+import { useRouter } from "next/navigation";
 
 export default function AF1_intro() {
+  const router = useRouter();
   return (
     <div class="text-white bg-black h-screen relative">
       <div class="absolute h-screen w-[1px] bg-[#00FFE0] left-[147px] z-10"></div>
@@ -9,7 +12,10 @@ export default function AF1_intro() {
       <div class="absolute w-screen h-[1px] bg-[#00FFE0] top-[571px] z-10"></div>
       <div class="absolute w-screen h-[1px] bg-[#00FFE0] top-[916px] z-10"></div>
 
-      <div class="bg-[url('/nike-logo.png')] bg-no-repeat w-[100px] h-[100px] ml-[24px]"></div>
+      <div onClick={
+        ()=>{
+          router.push('/Gallery1');
+        }}  class="bg-[url('/nike-logo.png')] bg-no-repeat w-[100px] h-[100px] ml-[24px] cursor-pointer"></div>
 
       <div class="absolute font-bold text-[24px] top-[116px] left-[539px] z-10">
         Toebox
